@@ -67,6 +67,10 @@ header, [data-testid="stHeader"] {
 .stDeployButton { display: none !important; }
 .stAppDeployButton { display: none !important; }
 [data-testid="stStatusWidget"] { display: none !important; }
+[data-testid="manage-app-button"] { display: none !important; }
+[data-testid="stForkButton"] { display: none !important; }
+.viewerBadge_container { display: none !important; }
+.viewerBadge_link_empty { display: none !important; }
 
 .block-container { padding: 2rem 3rem 4rem !important; max-width: 1180px !important; }
 
