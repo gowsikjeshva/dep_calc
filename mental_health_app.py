@@ -58,10 +58,27 @@ html, body, [class*="css"] {
         var(--bg) !important;
 }
 
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { display: none !important; } 
+header, [data-testid="stHeader"] { 
+    background: transparent !important; 
+    background-color: transparent !important; 
+}
+[data-testid="stHeader"]::before { display: none !important; }
+.stDeployButton { display: none !important; }
+.stAppDeployButton { display: none !important; }
+[data-testid="stStatusWidget"] { display: none !important; }
+
 .block-container { padding: 2rem 3rem 4rem !important; max-width: 1180px !important; }
 
 /* ── Sidebar ── */
+[data-testid="collapsedControl"],
+[data-testid="collapsedControl"] *,
+header button,
+header button *,
+[data-testid="stHeader"] button,
+[data-testid="stHeader"] button * {
+    color: #22c55e !important;
+}
 [data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0c1710 0%, #0f1a14 100%) !important;
     border-right: 1px solid var(--border) !important;
